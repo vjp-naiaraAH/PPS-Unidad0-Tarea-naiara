@@ -27,7 +27,7 @@ Copia del repositorio mediante ssh
 
 > tree
 
-Y A partir de ahí ya creamos los archivos necesarios para escribir después la documentación pertinente
+Y partir de aquí ya creamos los archivos necesarios para escribir después la documentación pertinente
 
 ![visualización desde navegador](https://raw.githubusercontent.com/vjp-naiaraAH/PPS-Unidad0-Tarea-naiara/refs/heads/main/docs/images/img5.png)
 
