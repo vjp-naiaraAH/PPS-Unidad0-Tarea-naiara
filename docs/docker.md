@@ -1,11 +1,17 @@
 # Creación de un contenedor de servicios NGINX con Docker
+
 En este documento se va a proceder a la documentación del proceso completo para desplegar la documentación generada por MkDocs usando un contenedor de Docker con NGINX como servidor web redirigiendo además el tráfico del puerto al 8085.
+
 ----------------------------------------------------------------------------------------------------------------------------------------
 ## ¿Qué es Docker?
+
 Comencemos con una breve explicación de lo que es Docker, que de manera resumida es una plataforma de virtualización que permite a los desarrolladores empaquetar aplicaciones con todas sus dependencias en unidades estandarizadas llamadas contendores.
+
 ----------------------------------------------------------------------------------------------------------------------------------------
 ## ¿Qué es NGINX?
+
 Nginx es un servidor web de código abierto de alto rendimiento que se usa principalmente para entragar contenido de contenido estátivo o como proxy inverso, balanceador de carga...
+
 ----------------------------------------------------------------------------------------------------------------------------------------
 ###  Ejecución del contenedor Docker
  
