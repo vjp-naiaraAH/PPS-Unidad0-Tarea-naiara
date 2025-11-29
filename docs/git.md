@@ -15,6 +15,7 @@ Copia del repositorio mediante ssh
 ![visualización desde navegador](https://raw.githubusercontent.com/vjp-naiaraAH/PPS-Unidad0-Tarea-naiara/refs/heads/main/docs/images/img2.png)
 
 1. Y con ayuda del comando cp -r copio toda la base del repositorio CalculadoraPython puesto que ambos proyectos tienen la misma base.
+ 
 ![visualización desde navegador](https://raw.githubusercontent.com/vjp-naiaraAH/PPS-Unidad0-Tarea-naiara/refs/heads/main/docs/images/img3.png)
 
 1. Listo el contenido para verificar que tiene al estructura deseada con ayuda del siguiente comando
@@ -44,15 +45,21 @@ Para subir el proyecto a GitHub después de realizar los diferentes cambios ser�
 
 #### Agrega cambios al staging area
 
-> git add .
+~~~
+git add .
+~~~
 
 #### Crea un commit con un comentario 
 
-> git commit -am "Creación de archivos para documentacion"
+~~~
+ git commit -am "Creación de archivos para documentacion"
+~~~
 
 #### Sube los cambios al repositorio remoto y en concreto a la rama main
 
-> git push origin main
+~~~ 
+git push origin main
+~~~
 
 ### Comprobación en GitHub de que se han subido los cambios correctamente
 
