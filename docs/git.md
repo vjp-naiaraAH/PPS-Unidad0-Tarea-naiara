@@ -6,10 +6,17 @@ A continuación voy a documentar el proceso completo y correcto de configuració
 
 1. Lo primero fue crear el repositorio, en mi caso  decidí hacerlo mediante el entorno gráfico en Github ya que se me hacía más comodo que por línea de comandos.
 1. Lo siguiente fue clonar el repositorio en el Desktop de mi máquina virtual mediante ssh siguiendo los pasos de las siguientes imagenes. 
+Copia del repositorio mediante ssh
+
 ![visualización desde navegador](https://raw.githubusercontent.com/vjp-naiaraAH/PPS-Unidad0-Tarea-naiara/refs/heads/main/docs/images/img1.png)
+
+> git clone
+ 
 ![visualización desde navegador](https://raw.githubusercontent.com/vjp-naiaraAH/PPS-Unidad0-Tarea-naiara/refs/heads/main/docs/images/img2.png)
+
 1. Y con ayuda del comando cp -r copio toda la base del repositorio CalculadoraPython puesto que ambos proyectos tienen la misma base.
 ![visualización desde navegador](https://raw.githubusercontent.com/vjp-naiaraAH/PPS-Unidad0-Tarea-naiara/refs/heads/main/docs/images/img3.png)
+
 1. Listo el contenido para verificar que tiene al estructura deseada con ayuda del siguiente comando
 > ls -la
 
@@ -20,6 +27,7 @@ A continuación voy a documentar el proceso completo y correcto de configuració
 > tree
 
 Y A partir de ahí ya creamos los archivos necesarios para escribir después la documentación pertinente
+
 ![visualización desde navegador](https://raw.githubusercontent.com/vjp-naiaraAH/PPS-Unidad0-Tarea-naiara/refs/heads/main/docs/images/img5.png)
 
 Cambio al repositorio en el cual quiero que esté la documentación:
@@ -47,4 +55,5 @@ Para subir el proyecto a GitHub después de realizar los diferentes cambios ser�
 > git push origin main
 
 ### Comprobación en GitHub de que se han subido los cambios correctamente
+
 ![Repositorio en GitHub](https://raw.githubusercontent.com/vjp-naiaraAH/PPS-Unidad0-Tarea-naiara/refs/heads/main/docs/images/img.png)
