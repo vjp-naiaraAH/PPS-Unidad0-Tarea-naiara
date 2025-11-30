@@ -44,7 +44,7 @@ jobs:
           publish_dir: ./site
 ~~~
 
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++
 
 ## Explicación
 
@@ -54,7 +54,7 @@ name: Generar documentación con MkDocs
 ```
 Seleccionar un nombre explicativo que se mostrará en la sección "Actions" de GitHub para facilitar su reconocimiento
 
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++
 
 ### 2. Eventos disparadores
 ```yaml
@@ -69,7 +69,7 @@ on:
 - `push: branches: - main`: El workflow se ejecuta automáticamente cada vez que se realiza un push a la rama `main`
 - `workflow_dispatch`: Permite ejecutar el workflow manualmente desde la interfaz de GitHub, útil para pruebas o regeneraciones bajo demanda
 
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++
 
 ### 3. Definición del Job
 ```yaml
@@ -82,7 +82,7 @@ jobs:
 - `build-and-deploy`: Nombre descriptivo del trabajo que se va a ejecutar
 - `runs-on: ubuntu-latest`: Especifica que el job se ejecutará en una máquina virtual con Ubuntu en su última versión estable. Ubuntu es ideal por ser ligero, rápido y compatible con la mayoría de herramientas de desarrollo
 
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++
 
 ### 4. Permisos
 ```yaml
@@ -92,7 +92,7 @@ permissions:
 
  Otorga permisos de escritura al workflow para que cree y modifique la rama `gh-pages` donde se publicará la documentación. Sin este permiso, el workflow fallaría al intentar hacer push.
 
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++
 
 ### 5. Step 1: Checkout del repositorio
 ```yaml
@@ -102,7 +102,7 @@ permissions:
 
  Este step clona el repositorio en la máquina virtual del runner. Es necesario para acceder a todos los archivos del proyecto, incluida la configuración de MkDocs y los archivos Markdown.
 
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++
 
 ### 6. Step 2: Configurar Python
 ```yaml
@@ -113,7 +113,7 @@ permissions:
 ```
 
  Instala Python en la máquina virtual, necesario porque MkDocs es una herramienta escrita en Python. La versión `3.x` garantiza que se use la última versión estable de Python 3.
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++
 
 ### 7. Step 3: Instalar dependencias
 ```yaml
@@ -128,7 +128,7 @@ permissions:
 - Instala el tema Material (opcional pero recomendado) que proporciona un diseño moderno y responsive
 - El símbolo `|` permite ejecutar múltiples comandos en secuencia
 
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++
 
 ### 8. Generar documentación
 ```yaml
@@ -138,7 +138,7 @@ permissions:
 
  Ejecuta el comando que lee todos los archivos Markdown del proyecto y genera los archivos HTML estáticos en la carpeta `site/`. Esta carpeta contendrá la web completa lista para ser servida.
 
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++
 
 ### 9. Step Publicar en GitHub Pages
 ```yaml
